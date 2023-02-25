@@ -1,0 +1,214 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4EC31AB-720A-4ACC-8E74-55CA03D7CBA3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>clockify_test</RootNamespace>
+    <AssemblyName>clockify test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assests\css\styles.2d35c770395da7e5789e.css" />
+    <Content Include="assests\icons\calendar.svg" />
+    <Content Include="assests\icons\chevron-left.svg" />
+    <Content Include="assests\icons\chevron-right.svg" />
+    <Content Include="assests\icons\clients.svg" />
+    <Content Include="assests\icons\close.svg" />
+    <Content Include="assests\icons\comfortable.svg" />
+    <Content Include="assests\icons\dashboard.svg" />
+    <Content Include="assests\icons\help.svg" />
+    <Content Include="assests\icons\inner.html" />
+    <Content Include="assests\icons\input-dots-menu.svg" />
+    <Content Include="assests\icons\m-outer-9fe86c29346daf61dc2cc0586b4fad18.html" />
+    <Content Include="assests\icons\notification.svg" />
+    <Content Include="assests\icons\plus-blue-req.svg" />
+    <Content Include="assests\icons\plus-blue.svg" />
+    <Content Include="assests\icons\projects.svg" />
+    <Content Include="assests\icons\reports.svg" />
+    <Content Include="assests\icons\save.svg" />
+    <Content Include="assests\icons\settings.svg" />
+    <Content Include="assests\icons\tags.svg" />
+    <Content Include="assests\icons\teams.svg" />
+    <Content Include="assests\icons\template.svg" />
+    <Content Include="assests\icons\time-tracker.svg" />
+    <Content Include="assests\icons\timesheet.svg" />
+    <Content Include="assests\js\137036292.js" />
+    <Content Include="assests\js\2-es2015.5eafb156839e6798fd37.js" />
+    <Content Include="assests\js\7-es2015.47a75c1d9e02f242d1c8.js" />
+    <Content Include="assests\js\analytics.js" />
+    <Content Include="assests\js\bat.js" />
+    <Content Include="assests\js\clarity.js" />
+    <Content Include="assests\js\gtm.js" />
+    <Content Include="assests\js\insight.min.js" />
+    <Content Include="assests\js\insight.old.min.js" />
+    <Content Include="assests\js\m-outer-7345858512d328389831b5c353d30a99.js" />
+    <Content Include="assests\js\main-es2015.9b2dd024ecb16332ef39.js" />
+    <Content Include="assests\js\main-es5.9b2dd024ecb16332ef39.js" />
+    <Content Include="assests\js\polyfills-es2015.8df701c87fc1c4b77539.js" />
+    <Content Include="assests\js\polyfills-es5.d4c1fa15e7326fabac8f.js" />
+    <Content Include="assests\js\pumble-bridget.js" />
+    <Content Include="assests\js\runtime-es2015.a961049afa40169e8139.js" />
+    <Content Include="assests\js\runtime-es5.a961049afa40169e8139.js" />
+    <Content Include="assests\js\scripts.f88d8460414c53e203d9.js" />
+    <Content Include="mainpage.html" />
+    <Content Include="Timesheet • Clockify_files\calendar%281%29.svg" />
+    <Content Include="Timesheet • Clockify_files\calendar.svg" />
+    <Content Include="Timesheet • Clockify_files\chevron-left.svg" />
+    <Content Include="Timesheet • Clockify_files\chevron-right.svg" />
+    <Content Include="Timesheet • Clockify_files\clients.svg" />
+    <Content Include="Timesheet • Clockify_files\close.svg" />
+    <Content Include="Timesheet • Clockify_files\comfortable.svg" />
+    <Content Include="Timesheet • Clockify_files\dashboard.svg" />
+    <Content Include="Timesheet • Clockify_files\help.svg" />
+    <Content Include="Timesheet • Clockify_files\inner.html" />
+    <Content Include="Timesheet • Clockify_files\input-dots-menu.svg" />
+    <Content Include="Timesheet • Clockify_files\m-outer-9fe86c29346daf61dc2cc0586b4fad18.html" />
+    <Content Include="Timesheet • Clockify_files\notification.svg" />
+    <Content Include="Timesheet • Clockify_files\plus-blue-req.svg" />
+    <Content Include="Timesheet • Clockify_files\plus-blue.svg" />
+    <Content Include="Timesheet • Clockify_files\projects.svg" />
+    <Content Include="Timesheet • Clockify_files\reports.svg" />
+    <Content Include="Timesheet • Clockify_files\save.svg" />
+    <Content Include="Timesheet • Clockify_files\settings.svg" />
+    <Content Include="Timesheet • Clockify_files\styles.2d35c770395da7e5789e.css" />
+    <Content Include="Timesheet • Clockify_files\tags.svg" />
+    <Content Include="Timesheet • Clockify_files\teams.svg" />
+    <Content Include="Timesheet • Clockify_files\template.svg" />
+    <Content Include="Timesheet • Clockify_files\time-tracker.svg" />
+    <Content Include="Timesheet • Clockify_files\timesheet.svg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assests\js\js" />
+    <None Include="packages.config" />
+    <Content Include="Timesheet • Clockify_files\0" />
+    <Content Include="Timesheet • Clockify_files\137036292.js.download" />
+    <Content Include="Timesheet • Clockify_files\2-es2015.5eafb156839e6798fd37.js.download" />
+    <Content Include="Timesheet • Clockify_files\7-es2015.47a75c1d9e02f242d1c8.js.download" />
+    <Content Include="Timesheet • Clockify_files\analytics.js.download" />
+    <Content Include="Timesheet • Clockify_files\bat.js.download" />
+    <Content Include="Timesheet • Clockify_files\clarity.js.download" />
+    <Content Include="Timesheet • Clockify_files\gtm.js.download" />
+    <Content Include="Timesheet • Clockify_files\insight.min.js.download" />
+    <Content Include="Timesheet • Clockify_files\insight.old.min.js.download" />
+    <Content Include="Timesheet • Clockify_files\js" />
+    <Content Include="Timesheet • Clockify_files\m-outer-7345858512d328389831b5c353d30a99.js.download" />
+    <Content Include="Timesheet • Clockify_files\main-es2015.9b2dd024ecb16332ef39.js.download" />
+    <Content Include="Timesheet • Clockify_files\main-es5.9b2dd024ecb16332ef39.js.download" />
+    <Content Include="Timesheet • Clockify_files\out-4.5.41.js.download" />
+    <Content Include="Timesheet • Clockify_files\polyfills-es2015.8df701c87fc1c4b77539.js.download" />
+    <Content Include="Timesheet • Clockify_files\polyfills-es5.d4c1fa15e7326fabac8f.js.download" />
+    <Content Include="Timesheet • Clockify_files\pumble-bridget.js.download" />
+    <Content Include="Timesheet • Clockify_files\runtime-es2015.a961049afa40169e8139.js.download" />
+    <Content Include="Timesheet • Clockify_files\runtime-es5.a961049afa40169e8139.js.download" />
+    <Content Include="Timesheet • Clockify_files\saved_resource" />
+    <Content Include="Timesheet • Clockify_files\scripts.f88d8460414c53e203d9.js.download" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1869</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44301/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
